@@ -1,5 +1,10 @@
 <template>
   <div id="app">
+    <v-app-bar
+      app
+      elevation="1">
+      <v-toolbar-title class="headline text-uppercase">Skald</v-toolbar-title>
+    </v-app-bar>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
