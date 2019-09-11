@@ -2,9 +2,11 @@ var manifestJSON = require('./public/manifest.json')
 
 module.exports = {
   pwa: {
-    workboxPluginMode: 'GenerateSW',
+    workboxPluginMode: 'InjectManifest',
     workboxOptions: {
-      skipWaiting: 'false'
+      /* skipWaiting: 'false', */
+      swSrc: './src/sw.js',
+      swDest: 'service-worker.js'
     },
     themeColor: manifestJSON.theme_color,
     name: manifestJSON.short_name,
