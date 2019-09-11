@@ -77,3 +77,5 @@ To make this work, you need a firebase project with settings file like this (not
   }
 }
 ```
+
+See [https://firebase.google.com/docs/hosting/quickstart](https://firebase.google.com/docs/hosting/quickstart) for more info.
