@@ -3,6 +3,7 @@
     <v-app-bar
       app
       elevation="1">
+      <img id="logo" alt="Vue logo" src="./assets/logo.svg">
       <v-toolbar-title class="headline text-uppercase">Skald</v-toolbar-title>
     </v-app-bar>
     <div id="nav">
@@ -84,6 +85,10 @@ export default {
 </script>
 
 <style lang="scss">
+#logo {
+  max-height:40px;
+  padding-right: 8px;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
