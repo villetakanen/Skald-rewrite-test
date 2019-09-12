@@ -6,6 +6,18 @@
       <img id="logo" alt="Vue logo" src="./assets/logo.svg">
       <v-toolbar-title class="headline text-uppercase">Skald</v-toolbar-title>
     </v-app-bar>
+
+    <v-content
+      fluid
+      grid-list-md>
+      <v-layout wrap>
+        <v-flex xs12 md3>
+          <SiteCard title="demo"/>
+          <v-btn>aa</v-btn>
+        </v-flex>
+      </v-layout>
+    </v-content>
+
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -41,6 +53,8 @@
 </template>
 
 <script>
+import SiteCard from './components/cards/SiteCard'
+
 export default {
   name: 'App',
   data () {
@@ -52,6 +66,9 @@ export default {
       snackWithButtons: false,
       timeout: 0
     }
+  },
+  components: {
+    SiteCard
   },
   created () {
     // Listen for swUpdated event and display refresh snackbar as required.
